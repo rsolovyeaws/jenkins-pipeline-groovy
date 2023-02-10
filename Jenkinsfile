@@ -20,7 +20,9 @@ pipeline {
     
     stage('Test') {
       steps { 
-        echo "Test"
+        script { 
+          gv.printTest()
+        }
       }
     }
    
